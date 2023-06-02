@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<title>My Second Web Page</title>
+
+<link rel="stylesheet" href="demo.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+       $("#btn").click(function(event){
+
+            $('#showheading th:nth-child(1)').text ('Type');
+            $('#showheading th:nth-child(2)').text('Big Mac');
+            $('#showheading th:nth-child(3)').text('Whopper');
+            $('#showheading th:nth-child(4)').text("Dave's Double");
+            $('#showheading th:nth-child(5)').text('Whataburger');
+
+            $('#showcalories td:nth-child(1)').text('Calories');
+            $('#showcalories td:nth-child(2)').text('563');
+            $('#showcalories td:nth-child(3)').text('677');
+            $('#showcalories td:nth-child(4)').text('870');
+            $('#showcalories td:nth-child(5)').text('590');
+
+            $('#showfat td:nth-child(1)').text('Fat');
+            $('#showfat td:nth-child(2)').text('30gm');
+            $('#showfat td:nth-child(3)').text('40gm');
+            $('#showfat td:nth-child(4)').text('51gm');
+            $('#showfat td:nth-child(5)').text('25gm');
+
+            $('#showven td:nth-child(1)').text('Vendor')
+            $('#showven td:nth-child(2)').text('MacD');
+            $('#showven td:nth-child(3)').text('Burger King');
+            $('#showven td:nth-child(4)').text('Wendys');
+            $('#showven td:nth-child(5)').text('Whataburger');
+
+            $("table").show();
+       });
+    });
+ </script>
+</head> 	
+<body>
+
+<div id="container">
+
+<header>My Web Site Brand</header>
+<nav>
+    <ul>
+    <li><a href="js-demo2.html">Home</a></li>
+    <li><a href="js-demo2b.html">About</a></li>
+    <li><a href="js-demo2d.html">Gallery</a></li>
+    <li><a href="js-demo2c.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+  <h1>My Second Heading</h1>
+  <p>My Second paragraph.</p>
+
+  <table border="1" style="display: none;">
+    <caption>Calories Comparison of Popular Burgers</caption>
+    <thead>
+        <tr id="showheading">
+            <th>Type</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="showcalories">
+            <td>Calories</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="showfat">
+            <td>Fat</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr id="showven">
+            <td>Vendor</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tfoot>
+  </table>
+
+  <input type="button" id="btn" value="Load Data" style="margin-top:20px;" />
+</main>
+
+<footer>&copy; 2020</footer>
+
+</div>
+
+</body>
+</html>
